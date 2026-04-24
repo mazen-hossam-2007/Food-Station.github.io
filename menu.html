@@ -1,27 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link id="light" rel="stylesheet" href="style1.css">
     <link id="dark" rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Food menu</title>
+
+    <style>
+    
+    .site-title {
+        text-align: center;
+        font-size: 40px;
+        margin-top: -60px;
+    }
+
+   
+    .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+
+    border: 3px solid #ff9800;   
+    border-radius: 12px;        
+    padding: 3px;                 
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-color: white;     
+}
+.menu-item p {
+    background-color: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+    display: inline-block;
+}
+.menu-item h3 {
+    background: linear-gradient(45deg, #ff9800, #ffb74d);
+    padding: 6px 12px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.menu-item p {
+    background-color: #f5f5f5;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #555;
+    display: inline-block;
+    margin-top: 5px;
+}
+</style>
 </head>
+
 <body>
-     <nav>
-        <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="deserts.html">Deserts</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="offers.html">Special Offers</a></li>
-                <li><a href="table.html">Table Reservation</a></li>
-        </ul>
-    </nav>
-    <button onclick="changeStyle()">Change style</button>
-    <footer>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About</a>
-    </footer>
-    <script src="script.js"></script>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="deserts.html">Deserts</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="offers.html">Special Offers</a></li>
+        <li><a href="delivery.html">Delivery</a></li>
+    </ul>
+</nav>
+
+
+<h1 class="site-title">Food Station</h1>
+
+<button onclick="changeStyle()">Change style</button>
+
+<!-- Menu Section -->
+<section id="menu">
+    <div class="container">
+
+        <div class="title">
+            <h2>Egyptian Lunch Menu</h2>
+            <p>Authentic Egyptian dishes for a perfect lunch</p>
+        </div>
+
+        <div class="menu-items">
+
+            <div class="menu-items-left">
+
+                <div class="menu-item">
+                    <img src="img/rice.jpg" alt="Rice">
+                    <div>
+                        <h3>Rice <span class="primary-text">50 L.E</span></h3>
+                        <p>Grilled minced meat served with rice and salad</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/kofta.jpg">
+                    <div>
+                        <h3>KOFTA <span class="primary-text">120 L.E</span></h3>
+                        <p>Grilled minced meat served with rice and salad</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/Molokhia.jpg">
+                    <div>
+                        <h3>Molokhia <span class="primary-text">80 L.E</span></h3>
+                        <p>Traditional green soup served with rice and chicken</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/mahshi mix plate.jpg">
+                    <div>
+                        <h3>MAHSHI MIX plate <span class="primary-text">110 L.E</span></h3>
+                        <p>Stuffed vegetables with rice and spices</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/shish tawooq.jpg">
+                    <div>
+                        <h3>SHISH TAWOOK <span class="primary-text">160 L.E</span></h3>
+                        <p>Marinated grilled chicken skewers with rice and garlic sauce</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/Fattah.webp">
+                    <div>
+                        <h3>FATTAH <span class="primary-text">100 L.E</span></h3>
+                        <p>Rice, bread and meat with garlic sauce</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/fried chicken.jpg">
+                    <div>
+                        <h3>FRIED CHICKEN <span class="primary-text">210 L.E</span></h3>
+                        <p>Crispy chicken with Egyptian rice</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/duck.jpg">
+                    <div>
+                        <h3>DUCK <span class="primary-text">220 L.E</span></h3>
+                        <p>Roasted duck served with rice</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/hawawshi.png">
+                    <div>
+                        <h3>HAWAWSHI <span class="primary-text">90 L.E</span></h3>
+                        <p>Stuffed bread with minced meat</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/KEBAB.webp">
+                    <div>
+                        <h3>KEBAB <span class="primary-text">180 L.E</span></h3>
+                        <p>Grilled kebab with rice and salad</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="img/liver and sausage.jpg">
+                    <div>
+                        <h3>LIVER & SAUSAGE <span class="primary-text">130 L.E</span></h3>
+                        <p>Egyptian-style liver sandwich</p>
+                    </div>
+                </div>
+
+
+                <div class="menu-item">
+                    <img src="img/Grilled Chicken.webp">
+                    <div>
+                        <h3>GRILLED CHICKEN <span class="primary-text">170 L.E</span></h3>
+                        <p>Charcoal grilled chicken served with rice and salad</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="btn btn-third">
+            <a href="#">EXPLORE FULL MENU</a>
+        </button>
+
+    </div>
+</section>
+
+<footer>
+    <a href="contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
+    
