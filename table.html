@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link id="light" rel="stylesheet" href="style1.css">
+    <link id="dark" rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <title>Table Reservation</title>
+     h1{
+            text-align: center;
+        }
+        textarea{
+            width: 50%;
+            padding: 10px;
+            margin:8px 0;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deserts.html">Deserts</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="table.html">Table Reservation</a></li>
+        </ul>
+        
+    </nav>
+<button onclick="changeStyle()">Change style</button>
+      <button onclick="changeStyle()">Change style</button>
+  <div class="Table">
+  <h1>Book a Table</h1>
+
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <br>
+    <input type="tel" placeholder="Phone Number" required>
+    <br>
+    <input type="date" required>
+    <br>
+    <input type="time" required>
+    <br>
+    <select required>
+      <option value="">Number of Guests</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5+</option>
+    </select>
+    <br>
+    <textarea placeholder="Notes (optional)"></textarea>
+    <br>
+    <button type="submit">Reserve Now</button>
+  </form>
+</div>
+    <footer>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
