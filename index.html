@@ -12,6 +12,11 @@
         padding: 0;
         box-sizing: border-box;
       }
+      .btn, button {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -39,8 +44,12 @@
             Experience dining redefined — from our kitchen to your table.
           </p>
           <div class="hero-btns">
-            <button class="btn-primary" type="button">Explore Menu</button>
-            <button class="btn-outline" type="button">Reserve a Table</button>
+            <button class="btn-primary" type="button">
+              <a href="menu.html" class="btn">Explore Menu</a>
+            </button>
+            <button class="btn-outline" type="button">
+              <a href="table.html" class="btn">Reserve a Table</a>
+            </button>
           </div>
           <ul class="stats">
             <li>
@@ -225,11 +234,7 @@
           type="button"
           style="font-size: 0.9rem; padding: 1.1rem 3rem"
         >
-          <a
-            href="menu.html"
-            style="color: black; text-decoration: none; cursor: pointer"
-            >View Full Menu</a
-          >
+          <a class="btn" href="menu.html">View Full Menu</a>
         </button>
       </section>
     </main>
