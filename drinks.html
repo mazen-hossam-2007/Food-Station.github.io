@@ -7,11 +7,14 @@
     <title>Drinks Menu</title>
 </head>
 <body>
-     <nav>
+    <nav>
+        <!-- <div class="logo">
+            <img src="img/logo.jpeg">
+        </div> -->
         <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="deserts.html">Desserts</a></li>
+                <li><a href="deserts.html">Deserts</a></li>
                 <li><a href="drinks.html">Drinks</a></li>
                 <li><a href="offers.html">Special Offers</a></li>
                 <li><a href="table.html">Table Reservation</a></li>
@@ -20,11 +23,12 @@
     </nav>
 
     <button onclick="changeStyle()">Change style</button>
+    <div class="main">
         <div class="hot"> <!-- for hot drinks -->
-        <b>Hot Drinks</b>
+            <b>Hot Drinks</b>
         <!-- هنشيل الطول و العرض من هنا لما نظبط ال CSS -->
-        <img src="https://static.betterretailing.com/wp-content/uploads/2022/08/11104217/Hot-drinks-coffee-tea-hot-chocolate-mugs-cups-beverages-1024x733.jpg" height="50" width="100">
-        <table class="hd"> <!--hd for hot drinks-->
+            <img src="https://static.betterretailing.com/wp-content/uploads/2022/08/11104217/Hot-drinks-coffee-tea-hot-chocolate-mugs-cups-beverages-1024x733.jpg" height="50" width="100">
+            <table class="hd"> <!--hd for hot drinks-->
             <thead>
                 <th>Item</th>
                 <th>Price</th>
@@ -32,44 +36,44 @@
             <tbody>
                 <tr>
                     <td>Espresso</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                 <tr>
                     <td>Double Espresso</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Americano</td>
-                    <td>60 L.E</td>
+                    <td class="price">60 L.E</td>
                 </tr>
                 <tr>
                     <td>Cappuccino</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                     
                 <tr>
                     <td>Latte</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                     
                 <tr>
                     <td>Mocha</td>
-                    <td>75 L.E</td>
+                    <td class="price">75 L.E</td>
                 </tr>
                     
                 <tr>
                     <td>Hot Chocolate</td>
-                    <td>90 L.E</td>
+                    <td class="price">90 L.E</td>
                 </tr>
                 
                 <tr>
                     <td>Turkish Coffee</td>
-                    <td>60 L.E</td>
+                    <td class="price">60 L.E</td>
                 </tr>
                     
                 <tr>
                     <td>Tea (Black/Green)</td>
-                    <td>50 L.E</td>
+                    <td class="price">50 L.E</td>
                 </tr>
             </tbody>
         </table>
@@ -77,7 +81,7 @@
     <div class="cold"> <!-- for cold drinks -->
         <b>Cold Drinks</b>
         <!-- هنشيل الطول و العرض لما نظبط الCSS -->
-        <img src="https://misscreamroll.com/cdn/shop/files/coldDrinks.png?v=1720376151&width=1100" height="50" width="100">
+        <img src="https://www.cannonlogistics.com.au/wp-content/uploads/2015/11/soft-drink-cans-800x400.jpg" height="50" width="100">
         <!-- cd for cold drinks -->
         <table class="cd">
             <thead>
@@ -87,43 +91,43 @@
             <tbody>
                 <tr>
                     <td>Coca-Cola</td>
-                    <td>30 L.E</tr>
+                    <td class="price">30 L.E</tr>
                 </tr>
                 <tr>
                     <td>Pepsi</td>
-                    <td>30 L.E</td>
+                    <td class="price">30 L.E</td>
                 </tr>
                 <tr>
                     <td>Sprite</td>
-                    <td>30 L.E</td>    
+                    <td class="price">30 L.E</td>    
                 </tr>
                 <tr>
                     <td>Fanta</td>
-                    <td>30 L.E</td>
+                    <td class="price">30 L.E</td>
                 </tr>
                 <tr>
                     <td>Ice Tea (Lemon / Peach)</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                 <tr>
                     <td>Fresh Lemonade</td>
-                    <td>75 L.E</td>
+                    <td class="price">75 L.E</td>
                 </tr>
                 <tr>
                     <td>Mint Lemonade</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Iced Coffee</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Iced Caramel Latte</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Iced Spanish Latte</td>
-                    <td>85 L.E</td>
+                    <td class="price">85 L.E</td>
                 </tr>
             </tbody>
         </table>
@@ -140,31 +144,31 @@
             <tbody>
                 <tr>
                     <td>Mango</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                 <tr>
                     <td>Strawberry</td>
-                    <td>60 L.E</td>
+                    <td class="price">60 L.E</td>
                 </tr>
                 <tr>
                     <td>Orange</td>
-                    <td>60 L.E</td>
+                    <td class="price">60 L.E</td>
                 </tr>
                 <tr>
                     <td>Guava</td>
-                    <td>60 L.E</td>
+                    <td class="price">60 L.E</td>
                 </tr>
                 <tr>
                     <td>Pineapple</td>
-                    <td>70 L.E</td>
+                    <td class="price">70 L.E</td>
                 </tr>
                 <tr>
                     <td>Kiwi</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Cocktail Mix</td>
-                    <td>90 L.E</td>
+                    <td class="price">90 L.E</td>
                 </tr>
             </tbody>
         </table>
@@ -181,23 +185,23 @@
             <tbody>
                 <tr>
                     <td>Mango Smoothie</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Strawberry Banana</td>
-                    <td>90 L.E</td>
+                    <td class="price">90 L.E</td>
                 </tr>
                 <tr>
                     <td>Berry Mix</td>
-                    <td>100 L.E</td>
+                    <td class="price">100 L.E</td>
                 </tr>
                 <tr>
                     <td>Avocado Smoothie</td>
-                    <td>80 L.E</td>
+                    <td class="price">80 L.E</td>
                 </tr>
                 <tr>
                     <td>Detox Green</td>
-                    <td>100 L.E</td>
+                    <td class="price">100 L.E</td>
                 </tr>
             </tbody>
         </table>
@@ -213,33 +217,52 @@
             </thead>
             <tr>
                 <td>Blue Lagoon</td>
-                <td>90 L.E</td>
+                <td class="price">90 L.E</td>
             </tr>
             <tr>
                 <td>Mojito</td>
-                <td>100 L.E</td>
+                <td class="price">100 L.E</td>
             </tr>
             <tr>
                 <td>Caramel Frappe</td>
-                <td>100 L.E</td>
+                <td class="price">100 L.E</td>
             </tr>
             <tr>
                 <td>Oreo Frappe</td>
-                <td>100 L.E</td>
+                <td class="price">100 L.E</td>
             </tr>
             <tr>
                 <td>Spanish Latte</td>
-                <td>90 L.E</td>
+                <td class="price">90 L.E</td>
             </tr>
             <tr>
                 <td>Matcha Latte</td>
-                <td>90 L.E</td>
+                <td class="price">90 L.E</td>
             </tr>
         </table>
     </div>
+    </div>
+        
     <footer>
-        <a href="contact.html">Contact Us</a>
-        <a href="about.html">About</a>
+        <div class="fc"><!--fc for footer container-->
+            <div class="contact">
+                <h1 class="c">Contact Info</h1>
+                <span>samoh@fci.com</span>
+                <span>mazen.apdelgawad@fci.com</span>
+                <span>mazen@fci.com</span>
+                <span>sheno@fci.com</span>
+                <span>mostafa@fci.com</span>
+                <span>marwan@fci.com</span>
+                <span>mohamed@fci.com</span>
+                <span>mariem@fci.com</span>
+            </div>
+            <div class="links">
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+        
+        
     </footer>
     <script src="script.js"></script>
 </body>
