@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      *,
-      *::before,
-      *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .btn, button {
+      .btn,
+      button {
         color: black;
         text-decoration: none;
         cursor: pointer;
       }
     </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
+        <img src="logo.png" alt="" class="logo" />
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="Home-Page.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
-          <li><a href="desserts.html">Desserts</a></li>
+          <li><a href="deserts.html">Deserts</a></li>
           <li><a href="drinks.html">Drinks</a></li>
           <li><a href="offers.html">Special Offers</a></li>
           <li><a href="table.html">Table Reservation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
-        <button onclick="changeStyle()">Change style</button>
+        <div style="display:flex;align-items:center;gap:1rem;">
+          <button class="theme-toggle" type="button" id="themeBtn" >☀️</button>
+          <button><a href="menu.html" class="btn">ORDER NOW</a></button>
+        </div>
       </nav>
     </header>
 
@@ -239,8 +244,10 @@
       </section>
     </main>
     <footer>
-      <a href="contact.html">Contact Us</a>
-      <a href="about.html">About</a>
+      <div class="logo">Food Station</div>
+      <span>© 2026 Food Station. All rights reserved.</span>
+      <span>Cairo, Egypt</span>
     </footer>
   </body>
 </html>
+
